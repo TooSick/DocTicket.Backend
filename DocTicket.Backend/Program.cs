@@ -5,7 +5,6 @@ using DocTicket.Backend.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Reflection;
 
 const string ConnectionName = "DocTicketConnection";
@@ -92,30 +91,24 @@ void AddIdentity()
 
     builder.Services.Configure<IdentityOptions>(options =>
     {
-        // Password settings
         options.Password.RequireDigit = true;
         options.Password.RequiredLength = 7;
         options.Password.RequireNonAlphanumeric = false;
         options.Password.RequiredUniqueChars = 6;
         options.Password.RequireUppercase = false;
 
-        // Lockout settings
         options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
         options.Lockout.AllowedForNewUsers = true;
 
-        // User settings
         options.User.RequireUniqueEmail = true;
     });
 
     builder.Services.ConfigureApplicationCookie(options =>
     {
-        // Cookie settings
         options.Cookie.Name = ".DocTicketWebApplication";
         options.Cookie.IsEssential = true;
         options.Cookie.HttpOnly = true;
         options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
-        // If the LoginPath isn't set, ASP.NET Core defaults 
-        // the path to /Account/Login.
         options.LoginPath = "/Account/Login";
         options.LogoutPath = "/Account/LogOut";
     });

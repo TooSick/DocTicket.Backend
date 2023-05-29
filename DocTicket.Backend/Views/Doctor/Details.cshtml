@@ -37,7 +37,7 @@
                                     }
                                 }
 
-                                @if (ticketInfo.CanUserOrderTicket)
+                                @if (ticketInfo.CanUserOrderTicket && !Context.User.IsInRole("Admin"))
                                 {
                                     <a class="btn btn-primary m-1" asp-controller="Ticket" asp-action="Order" asp-route-id="@ticketInfo.Id">Заказать</a>
                                 }

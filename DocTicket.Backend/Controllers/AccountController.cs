@@ -1,11 +1,9 @@
 ﻿using AutoMapper;
-using DocTicket.Backend.EF;
 using DocTicket.Backend.Models;
 using DocTicket.Backend.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace DocTicket.Backend.Controllers
 {
@@ -81,7 +79,7 @@ namespace DocTicket.Backend.Controllers
                 Email = registerViewModel.Email,
                 UserName = registerViewModel.Email,
             };
-            
+
             var newUserResponce = await _userManager.CreateAsync(newUser, registerViewModel.Password);
 
             if (newUserResponce.Succeeded)
@@ -134,7 +132,7 @@ namespace DocTicket.Backend.Controllers
             appUser.FirstName = user.FirstName;
             appUser.LastName = user.LastName;
             appUser.Patronymic = user.Patronymic;
-            
+
             if (appUser.Email != user.Email)
             {
                 appUser.Email = user.Email;

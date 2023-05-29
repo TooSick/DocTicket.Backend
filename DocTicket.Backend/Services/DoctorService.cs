@@ -2,7 +2,6 @@
 using DocTicket.Backend.EF;
 using DocTicket.Backend.Models;
 using DocTicket.Backend.ViewModels;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Globalization;
@@ -85,7 +84,7 @@ namespace DocTicket.Backend.Services
                     {
                         ticketViewModel.CanUserSendOffer = true;
                     }
-                    
+
                     if (ticket.AppUserId != null || (user?.Tickets.Any(t => t.ReceptionTime.ToString("M", cultureInfo) == ticket.ReceptionTime.ToString("M", cultureInfo)
                         && t.DoctorId == doctor.Id) ?? false))
                         ticketViewModel.CanUserOrderTicket = false;

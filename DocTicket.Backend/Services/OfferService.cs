@@ -14,7 +14,7 @@ namespace DocTicket.Backend.Services
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly IMapper _mapper;
 
-        
+
         public OfferService(DocTicketDBContext context, UserManager<AppUser> userManager, IMapper mapper, IHttpContextAccessor contextAccessor)
         {
             _context = context;
@@ -23,7 +23,7 @@ namespace DocTicket.Backend.Services
             _contextAccessor = contextAccessor;
         }
 
-        
+
         public async Task CreateOffer(List<OrderTicketViewModel> orderTickets)
         {
             var userTicket = await _context.Tickets.Include(t => t.AppUser)

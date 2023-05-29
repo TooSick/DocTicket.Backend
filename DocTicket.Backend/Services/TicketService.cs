@@ -2,16 +2,9 @@
 using DocTicket.Backend.EF;
 using DocTicket.Backend.Models;
 using DocTicket.Backend.ViewModels;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using MimeKit;
-using System;
 using System.Globalization;
-using System.Net.Mail;
-using System.Security.Claims;
 
 namespace DocTicket.Backend.Services
 {
@@ -61,7 +54,7 @@ namespace DocTicket.Backend.Services
 
             if (ticket.Offers.Any())
                 _context.Offers.RemoveRange(ticket.Offers);
-            
+
             ticket.AppUserId = null;
             await _context.SaveChangesAsync();
         }
@@ -86,57 +79,5 @@ namespace DocTicket.Backend.Services
                 anotherUserTicket,
             });
         }
-
-        //private void SendTicketByEmail(Ticket ticket)
-        //{
-        //    var pdfFile = GeneratePDFTicket(ticket);
-        //}
-
-        //private byte[] GeneratePDFTicket(Ticket ticket)
-        //{
-        //    var pdfDocument = new iTextSharp.text.Document();
-        //    var memoryStream = new MemoryStream();
-        //    var writer = iTextSharp.text.pdf.PdfWriter.GetInstance(pdfDocument, memoryStream);
-
-        //    pdfDocument.Open();
-
-        //    pdfDocument.Add(new iTextSharp.text.Paragraph($"Медицинское учреждение: {ticket.Doctor.Department.Polyclinic.Title}"));
-        //    pdfDocument.Add(new iTextSharp.text.Paragraph($"Врач: {ticket.Doctor.LastName} {ticket.Doctor.FirstName} {ticket.Doctor.Patronymic}"));
-        //    pdfDocument.Add(new iTextSharp.text.Paragraph($"Время приема: {ticket.ReceptionTime.ToString("dd MMMM HH:mm", new CultureInfo("ru-Ru"))}"));
-
-        //    pdfDocument.Close();
-
-        //    var pdfBytes = memoryStream.ToArray();
-
-        //    return pdfBytes;
-        //}
-
-        //private void SendEmailWithAttachment(string recipientEmail, string subject, string body, byte[] attachmentData, string attachmentFileName)
-        //{
-        //    var message = new MimeMessage();
-        //    message.From.Add(new MailboxAddress("Отправитель", "sender@example.com"));
-        //    message.To.Add(new MailboxAddress("Получатель", recipientEmail));
-        //    message.Subject = subject;
-
-        //    var builder = new BodyBuilder();
-        //    builder.TextBody = body;
-
-        //    // Добавление вложения PDF файла
-        //    var attachment = builder.Attachments.Add(attachmentFileName, new MemoryStream(attachmentData));
-        //    attachment.ContentType.MediaType = MimeTypes.Application.Pdf;
-
-        //    message.Body = builder.ToMessageBody();
-
-        //    using (var client = new SmtpClient())
-        //    {
-        //        // Настройка параметров SMTP-сервера
-        //        client.Connect("smtp.example.com", 587, SecureSocketOptions.StartTls);
-        //        client.Authenticate("yourusername", "yourpassword");
-
-        //        // Отправка письма
-        //        client.Send(message);
-        //        client.Disconnect(true);
-        //    }
-        //}
     }
 }
