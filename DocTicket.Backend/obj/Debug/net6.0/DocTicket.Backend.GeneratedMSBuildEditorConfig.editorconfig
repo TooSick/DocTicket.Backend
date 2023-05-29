@@ -14,3 +14,83 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Account/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Account/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Doctor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Doctor/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Offer/Incoming.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJcSW5jb21pbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Offer/Outgoing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmZXJcT3V0Z29pbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Polyclinic/Departments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9seWNsaW5pY1xEZXBhcnRtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Polyclinic/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9seWNsaW5pY1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Polyclinic/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9seWNsaW5pY1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Polyclinic/_ShortPolyclinicPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9seWNsaW5pY1xfU2hvcnRQb2x5Y2xpbmljUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Shared/_NavigationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZpZ2F0aW9uUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Ticket/Exchange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XEV4Y2hhbmdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Ticket/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/Ticket/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/meshc/Desktop/Diplom/DocTicket/DocTicket.Backend/DocTicket.Backend/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

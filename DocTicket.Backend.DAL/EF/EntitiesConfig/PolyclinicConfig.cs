@@ -8,19 +8,19 @@ namespace DocTicket.Backend.DAL.EF.EntitiesConfig
     {
         public override void Configure(EntityTypeBuilder<Polyclinic> builder)
         {
-            builder.Property(p => p.Title).IsRequired();
+            //builder.Property(p => p.Title).IsRequired();
 
-            builder.Property(p => p.Title).IsRequired();
+            //builder.Property(p => p.Title).IsRequired();
 
-            builder.Property(p => p.Address).IsRequired();
+            //builder.Property(p => p.Address).IsRequired();
 
-            builder.Property(p => p.WorkingHours).IsRequired();
+            //builder.Property(p => p.WorkingHours).IsRequired();
             
-            builder.HasMany(p => p.Doctors)
-                .WithOne(d => d.Polyclinic)
-                .HasForeignKey(fk => fk.PolyclinicId)
-                .IsRequired()
-                .OnDelete(DeleteBehavior.Cascade);
+            //builder.HasMany(p => p.Doctors)
+            //    .WithOne(d => d.Polyclinic)
+            //    .HasForeignKey(fk => fk.PolyclinicId)
+            //    .IsRequired()
+            //    .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

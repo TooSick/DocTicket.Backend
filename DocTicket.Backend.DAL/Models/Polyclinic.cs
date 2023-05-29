@@ -9,8 +9,6 @@
         public string? GeneralInformation { get; set; }
 
 
-        public virtual List<Doctor> Doctors { get; set; } = new();
-
         public virtual List<Department> Departments { get; set; } = new();
 
         public virtual List<RegistryNumber> RegistryNumbers { get; set; } = new();

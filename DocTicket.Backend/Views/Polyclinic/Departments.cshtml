@@ -1,0 +1,8 @@
+﻿@model IEnumerable<DepartmentViewModel>
+
+<div class="d-flex flex-wrap h-100 justify-content-center">
+    @foreach (var department in Model)
+    {
+        <a class="btn btn-outline-primary m-3" asp-controller="Doctor" asp-action="List" asp-route-id="@department.Id">@department.Name</a>
+    }
+</div>

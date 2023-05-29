@@ -1,0 +1,51 @@
+﻿@using System.Security.Claims;
+@model DoctorViewModel
+
+<div class="d-flex flex-column">
+    <div class="card py-0 border-primary m-2 justify-content-center">
+        <div class="d-flex card-body justify-content-around">
+            <div class="p-2">
+                <h5>@Model.FullName</h5>
+                <p class="card-text">@Model.Specialization</p>
+                <p class="card-text">@Model.PolyclinicName</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light d-flex flex-column">
+        @foreach (var ticket in Model.Tickets)
+        {
+            <div class="container d-flex flex-column my-1">
+                <div>
+                    <h5>@ticket.Key</h5>
+                    <hr>
+                </div>
+                <div class="d-flex flex-wrap">
+                    @foreach (var ticketInfo in ticket.Value)
+                    {
+                        <div class="m-2 p-2 d-flex border border-primary">
+                            <p class="align-self-center m-1">@ticketInfo.ReceptionTime.ToString("t", new CultureInfo("ru-Ru"))</p>
+                            <div class="d-flex flex-column m-2">
+                                @if (Context.User.Identity.IsAuthenticated)
+                                {
+                                    @if (Context.User.IsInRole("Admin"))
+                                    {
+                                        <a class="btn btn-danger m-1">Удалить</a>
+                                    }
+                                    else if (ticketInfo.CanUserSendOffer)
+                                    {
+                                        <a class="btn btn-primary m-1" asp-controller="Ticket" asp-action="Exchange" asp-route-id="@ticketInfo.Id">Предложить обмен</a>
+                                    }
+                                }
+
+                                @if (ticketInfo.CanUserOrderTicket)
+                                {
+                                    <a class="btn btn-primary m-1" asp-controller="Ticket" asp-action="Order" asp-route-id="@ticketInfo.Id">Заказать</a>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

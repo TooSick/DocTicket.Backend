@@ -1,0 +1,17 @@
+﻿@model IEnumerable<OrderTicketViewModel>
+
+<div class="row row-cols-1 row-cols-md-4 g-1">
+    @foreach (var ticket in Model)
+    {
+        <div class="col">
+            <div class="card border-primary d-inline-block align-top">
+                <div class="card-body">
+                    <p class ="card-title">Доктор: @ticket.Doctor.FullName</p>
+                    <hr>
+                    <p class="card-text">Время приема: @ticket.ReceptionTime.ToString("dd MMMM HH:mm", new CultureInfo("ru-Ru"))</p>
+                    <a class="btn btn-danger col-md-6 mr-auto" asp-action="Cancel" asp-route-id="@ticket.Id">Отменить</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

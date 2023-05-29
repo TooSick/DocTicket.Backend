@@ -1,0 +1,14 @@
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\bin\Debug\net6.0\DocTicket.Backend.DAL.deps.json
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\bin\Debug\net6.0\DocTicket.Backend.DAL.runtimeconfig.json
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\bin\Debug\net6.0\DocTicket.Backend.DAL.dll
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\bin\Debug\net6.0\DocTicket.Backend.DAL.pdb
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\DocTicket.Backend.DAL.csproj.AssemblyReference.cache
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\DocTicket.Backend.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\DocTicket.Backend.DAL.AssemblyInfoInputs.cache
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\DocTicket.Backend.DAL.AssemblyInfo.cs
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\DocTicket.Backend.DAL.csproj.CoreCompileInputs.cache
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\DocTicket.Backend.DAL.dll
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\refint\DocTicket.Backend.DAL.dll
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\DocTicket.Backend.DAL.pdb
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\DocTicket.Backend.DAL.genruntimeconfig.cache
+C:\Users\meshc\Desktop\Diplom\DocTicket\DocTicket.Backend\DocTicket.Backend.DAL\obj\Debug\net6.0\ref\DocTicket.Backend.DAL.dll

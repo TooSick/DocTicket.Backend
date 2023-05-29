@@ -1,0 +1,49 @@
+﻿@model RegisterViewModel
+
+<div class="d-flex justify-content-center">
+    <div class="d-inline-block align-top form-signin m-auto justify-content-center text-center">
+        <form asp-action="Register" method="post">
+            @if (TempData["Error"] != null)
+            {
+                <div class="col-md-12 alert alert-danger">
+                    <span>@TempData["Error"] </span>
+                </div>
+            }
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Фамилия" asp-for="LastName">
+                <label for="floatingInput" asp-for="LastName">Фамилия</label>
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Имя" asp-for="FirstName">
+                <label for="floatingInput" asp-for="FirstName">Имя</label>
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Отчество" asp-for="Patronymic">
+                <label for="floatingInput" asp-for="Patronymic">Отчество</label>
+                <span asp-validation-for="Patronymic" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" asp-for="Email">
+                <label for="floatingInput" asp-for="Email">Email адрес</label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Текущий пароль" asp-for="Password">
+                <label for="floatingPassword" asp-for="Password">Текущий пароль</label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Новый пароль" asp-for="ConfirmPassword">
+                <label for="floatingPassword" asp-for="ConfirmPassword">Новый пароль</label>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary mb-2" type="submit">Зарегистрироваться</button>
+            <a class="w-100 btn btn-lg btn-light" asp-controller="Home" asp-action="Index">Отмена</a>
+            <p class="mt-5 mb-3 text-muted d-flex justify-content-center">© 2017–2022</p>
+        </form>
+    </div>
+</div>

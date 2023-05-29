@@ -1,0 +1,14 @@
+﻿@model OrderTicketViewModel
+
+<div class="d-flex justify-content-center">
+    <div class="d-inline-block align-top justify-content-center">
+        <div class="card border-primary">
+            <div class="card-body">
+                <h5 class="card-title">Ваш талон заказан успешно!</h5>
+                <hr>
+                <p class="card-text">Доктор: @Model.Doctor.FullName</p>
+                <p class="card-text">Время приема: @Model.ReceptionTime.ToString("dd MMMM HH:mm", new CultureInfo("ru-Ru"))</p>
+            </div>
+        </div>
+    </div>
+</div>

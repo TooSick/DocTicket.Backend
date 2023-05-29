@@ -1,6 +1,8 @@
 ﻿using DocTicket.Backend.DAL.EF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Identity;
+using DocTicket.Backend.DAL.Models;
 
 namespace DocTicket.Backend.DAL
 {
@@ -10,6 +12,9 @@ namespace DocTicket.Backend.DAL
         {
             services.AddDbContext<DocTicketDBContext>(options
                 => options.UseSqlServer(connectionString));
+
+            services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<DocTicketDBContext>();
         }
     }
 }

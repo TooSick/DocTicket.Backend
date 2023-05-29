@@ -1,0 +1,37 @@
+﻿<header class="p-3 d-flex flex-wrap align-items-center justify-content-md-between border-bottom sticky-top">
+    <div class="d-flex align-items-center">
+        <div>
+            <a asp-controller="Home" asp-action="Index">
+                <img src="~/images//DocTicket (1).png" width="72" height="72"/>
+            </a>
+        </div>
+    </div>
+
+    <ul class="d-flex nav col-5 col-md-auto mb-2 justify-content-center mb-md-0 align-items-center">
+        <li><a class="nav-link px-2 link-dark" asp-controller="Polyclinic" asp-action="List">Медучреждения</a></li>
+        <li><a class="nav-link px-2 link-dark" href="/Doctor/List">Врачи</a></li>
+        @if (Context.User.IsInRole("Admin"))
+        {
+            <li><a class="nav-link px-2 link-dark">Пользователи</a></li>
+        }
+        else if (Context.User.IsInRole("User"))
+        {
+            <li><a class="nav-link px-2 link-dark" asp-controller="Ticket" asp-action="List">Мои талоны</a></li>
+            <li><a class="nav-link px-2 link-dark" asp-controller="Offer" asp-action="Incoming">Входящие предложения</a></li>
+            <li><a class="nav-link px-2 link-dark" asp-controller="Offer" asp-action="Outgoing">Исходящие предложения</a></li>
+            <li><a class="nav-link px-2 link-dark" asp-controller="Account" asp-action="View">Профиль</a></li>
+        }
+    </ul>
+
+    <div class="text-end">
+        @if (Context.User.Identity?.IsAuthenticated ?? false)
+        {
+            <a type="button" class="btn btn-outline-primary me-2" asp-controller="Account" asp-action="Logout">Выход</a>
+        }
+        else
+        {
+            <a type="button" class="btn btn-outline-primary me-2" asp-controller="Account" asp-action="Login">Вход</a>
+            <a type="button" class="btn btn-primary" asp-controller="Account" asp-action="Register">Регистрация</a>
+        }
+    </div>
+</header>

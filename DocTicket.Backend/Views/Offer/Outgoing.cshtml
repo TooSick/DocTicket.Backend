@@ -1,0 +1,47 @@
+﻿@model IEnumerable<OutgoingOfferViewModel>
+
+<div>
+    @if (Model.Any())
+    {
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var offer in Model)
+            {
+                <div class="col">
+                    <div class="card border-secondary">
+                        <div class="d-flex flex-column justify-content-center">
+                            <h3 class="align-self-center">Запрос на обмен талонами</h3>
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-primary d-inline-block align-top m-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ваш талон</h5>
+                                        <hr>
+                                        <p class="card-text">Доктор: @offer.Tickets[0].Doctor.FullName</p>
+                                        <p class="card-text">Время приема: @offer.Tickets[0].ReceptionTime.ToString("dd MMMM HH:mm", new CultureInfo("ru-Ru"))</p>
+                                    </div>
+                                </div>
+                                <div class="card border-primary d-inline-block align-top m-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Желаймый талон</h5>
+                                        <hr>
+                                        <p class="card-text">Доктор: @offer.Tickets[1].Doctor.FullName</p>
+                                        <p class="card-text">Время приема: @offer.Tickets[1].ReceptionTime.ToString("dd MMMM HH:mm", new CultureInfo("ru-Ru"))</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center m-2">
+                                <a class="btn btn-secondary m-2" asp-controller="Offer" asp-action="Cancel" asp-route-id="@offer.Id">Отменить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="d-flex justify-content-center">
+            <h5>Исходящих запросов нет</h5>
+        </div>
+    }
+</div>

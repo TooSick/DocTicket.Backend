@@ -2,6 +2,6 @@
 {
     public class EntityWithPhoto : BaseEntity
     {
-        public byte[] Photo { get; set; }
+        public byte[]? Photo { get; set; }
     }
 }

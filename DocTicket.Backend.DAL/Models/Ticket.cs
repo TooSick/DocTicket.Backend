@@ -13,6 +13,6 @@
 
         public virtual AppUser? AppUser { get; set; }
 
-        public virtual Chat? Chat { get; set; }
+        public virtual List<Offer>? Offers { get; set; }
     }
 }

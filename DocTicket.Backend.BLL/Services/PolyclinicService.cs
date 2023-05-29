@@ -19,12 +19,13 @@ namespace DocTicket.Backend.BLL.Services
         }
 
 
-        public IEnumerable<PolyclinicDTO> GetAllPoliclinics()
+        public async Task<IEnumerable<PolyclinicDTO>> GetAllPoliclinics()
         {
-            var pollinics = _dbContext.Polyclinics
+            var pollinics = await Task<IEnumerable<Polyclinic>>.Factory.StartNew(() =>
+                _dbContext.Polyclinics
                 .Include(p => p.RegistryNumbers)
                 .Include(p => p.WorkingHours)
-                .OrderBy(p => p.Title);
+                .OrderBy(p => p.Title));
 
             return _mapper.Map<IEnumerable<Polyclinic>, IEnumerable<PolyclinicDTO>>(pollinics);
         }
